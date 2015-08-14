@@ -2,7 +2,7 @@ var tracker;
 
 function init() {
     tracker = initTracker("#droneView");
-    droneConnection.connect(tracker, "#droneView .drone");
+    droneConnection.streamImage(tracker, "#droneView .drone");
 }
 
 function initTracker(element) {
