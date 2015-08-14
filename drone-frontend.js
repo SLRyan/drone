@@ -67,12 +67,14 @@ function decideDroneMovement(colors) {
         if (rectangle.color === "green") {
             if (rectangle.width > 250) {
                 move.left = true;
+                move.forward();
             }
         }
 
         else if (rectangle.color === "red") {
             if (rectangle.width > 250) {
                 move.right = true;
+                move.forward();
             }
         }
 
